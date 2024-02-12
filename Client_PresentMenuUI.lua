@@ -7,5 +7,5 @@ require("Annotations");
 ---@param game GameClientHook
 ---@param close fun() # Zero parameter function that closes the dialog
 function Client_PresentMenuUI(rootParent, setMaxSize, setScrollable, game, close)
-	
+
 end
