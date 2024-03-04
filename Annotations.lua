@@ -16,8 +16,8 @@
 ---@field GetStanding fun(turn: integer, callback: fun(standing: GameStanding | nil)) # Pass the turn number and a callback function to retrieve the a GameStanding
 ---@field GetTurn fun(turn: integer, callback: fun(gameTurn: GameTurn | nil)) # Used to retrieve a GameTurn of a specific turn, pass the turn number and a callback function that takes a GameTurn as argument
 ---@field Orders GameOrder[] # The order list of the player. Can add, remove and modify any game order
----@field CreateDialog fun(rootParent: RootParent, setMaxSize: fun(width: number, height: number), setScrollable: fun(horizontallyScrollable: boolean, verticallyScrollable: boolean), game: GameClientHook, close: fun()) # Used to create a dialog, arguments are the same arguments that are passed to the Client_PresentMenuUI hook
----@field SendGameCustomMessage fun(func: fun(waitText: string, payload: table, callback: fun(t: table))) # Used to send updates to the server. Note that it is limited to 5 calls every 5 seconds
+---@field CreateDialog fun(callback: fun(rootParent: RootParent, setMaxSize: fun(width: number, height: number), setScrollable: fun(horizontallyScrollable: boolean, verticallyScrollable: boolean), game: GameClientHook, close: fun())) # Used to create a dialog, arguments are the same arguments that are passed to the Client_PresentMenuUI hook
+---@field SendGameCustomMessage fun(waitText: string, payload: table, callback: fun(t: table)) # Used to send updates to the server. Note that it is limited to 5 calls every 5 seconds
 ---@field HighlightTerritories fun(array: TerritoryID[]) # Used to highlight territories on the map, pass the territoryIDs in an array
 ---@field CreateLocatorCircle fun(XCoordinate: number, YCoordinate: number) # Pass the X and Y coordinate to create a locater circle on that location
 
