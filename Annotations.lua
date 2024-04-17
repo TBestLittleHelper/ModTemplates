@@ -1045,8 +1045,8 @@
 ---@field GetOnValueChanged fun(): fun() # Get the function that will be invoked when the client or mod changes the state of the checkbox
 
 ---@class TextInputField: UIObject, TextUIObject, InteractableUIObject # A container used for getting string inputs
----@field SetPlaceHolderText fun(text: string): TextInputField # Set the text that will be displayed when the text field is empty
----@field GetPlaceHolderText fun(): string # Get the text that will be displayed when the text field is empty
+---@field SetPlaceholderText fun(text: string): TextInputField # Set the text that will be displayed when the text field is empty
+---@field GetPlaceholderText fun(): string # Get the text that will be displayed when the text field is empty
 ---@field SetCharacterLimit fun(limit: integer): TextInputField # Set the limit of characters the client can input
 ---@field GetCharacterLimit fun(): integer # Get the character limit that the client can input
 
