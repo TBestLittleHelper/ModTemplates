@@ -1,3 +1,5 @@
+---@meta
+
 ---@class ProxyObject # Proxy object class
 ---@field proxyType string # The proxy type
 ---@field readonly true # Set to true if the object is readonly
@@ -183,7 +185,7 @@
 ---@field ImageFileName string # The name of the PNG file in the `SpecialUnitsImages` folder. This will be the icon of the unit that is shown on the map
 ---@field IncludeABeforeName boolean # If true, when displaying this units name an 'A' will be put before the name
 ---@field IsVisibleToAllPlayers boolean # If true, this unit is at all times visible for all players, meaning that a territory with this unit will be visible for every player in the game
----@field ModData string # Custom data added to the unit. Please note that using the ID of the unit to save data in one of the Mod storages is not safe since it is fairly common to clone a unit, modify where necessary, remove the old unit and add the clone back. This results in essentially the same unit but with a different ID. 
+---@field ModData string # Custom data added to the unit. Please note that using the ID of the unit to save data in one of the Mod storages is not safe since it is fairly common to clone a unit, modify where necessary, remove the old unit and add the clone back. This results in essentially the same unit but with a different ID.
 ---@field ModID ModID | nil # The ID of the mod that created this unit
 ---@field Name string # The name of the unit. Note that this field is not used to display text on the map
 ---@field TextOverHeadOpt string # A string that will appear above the unit on the map. Recommended to not use long string, but keep it short (8 characters max)
@@ -634,7 +636,7 @@
 ---@class ClanPlayerInfo # The clan data
 ---@field ClanID ClanID # The ID that identifies this clan
 ---@field IconIncre integer # Not documented
----@field Name string # The name of the clan 
+---@field Name string # The name of the clan
 
 
 ---@alias TerritoryID integer # The identifier used to uniquely identify territories
@@ -726,12 +728,12 @@
 ---@field TickCount fun(): integer # The amount of time in miliseconds have passed, useful for profiling code
 ---@field ModOrderControl EnumModOrderControl # Available ModOrderControl enums
 
----@class EnumPlayerID # 
+---@class EnumPlayerID #
 ---| 'Neutral' # The PlayerID representing a neutral territory
 ---| 'Fog' # The PlayerID representing a fogged territory
 ---| 'AvailableForDistribution' # The PlayerID representing a territory that can be picked; Only used in the distribution turn
 
----@class EnumTerritoryConnectionWrap # 
+---@class EnumTerritoryConnectionWrap #
 ---| 'Normal' # A normal connection
 ---| 'WrapHorizontally' # A connection that wraps horizontally
 ---| 'WrapVertically' # A connection that wraps vertically
@@ -1013,7 +1015,7 @@
 ---@field id string # A unique UUID of this UIObject
 
 ---@class TextUIObject # An UI object that can display text
----@field SetText fun(text: string): TextUIObject # Set the text of the UI object 
+---@field SetText fun(text: string): TextUIObject # Set the text of the UI object
 ---@field GetText fun(): string # Get the text of the UI object
 
 ---@class ColorUIObject # An UI object that can have a color
