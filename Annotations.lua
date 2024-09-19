@@ -1,4 +1,4 @@
----@meta
+---@meta _
 
 ---@class ProxyObject # Proxy object class
 ---@field proxyType string # The proxy type
