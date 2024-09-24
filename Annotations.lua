@@ -840,7 +840,8 @@
 ---| 'Gold' # Gold enum
 
 ---@class ArmiesWL # WL Armies
----@field Create fun(armies: integer, specialUnitOpt: SpecialUnit[]): Armies # Used to create a new Armies object
+---@field Create fun(armies: integer, specialUnitOpt?: SpecialUnit[] | nil): Armies # Used to create a new Armies object. Special units can be nil, omitted, or an empty array if there aren't any.
+
 
 ---@class Boss1WL # WL Boss1
 ---@field CreateForScenario fun(): Boss1 # Creates a Boss1 unit for a custom scenario
