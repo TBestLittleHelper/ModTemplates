@@ -730,9 +730,9 @@
 ---@field ModOrderControl EnumModOrderControl # Available ModOrderControl enums
 
 ---@class EnumPlayerID #
----| 'Neutral' # The PlayerID representing a neutral territory
----| 'Fog' # The PlayerID representing a fogged territory
----| 'AvailableForDistribution' # The PlayerID representing a territory that can be picked; Only used in the distribution turn
+---@field Neutral integer # The PlayerID representing a neutral territory
+---@field Fog integer  # The PlayerID representing a fogged territory
+---@field AvailableForDistribution integer # The PlayerID representing a territory that can be picked; Only used in the distribution turn
 
 ---@class EnumTerritoryConnectionWrap #
 ---| 'Normal' # A normal connection
