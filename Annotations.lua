@@ -139,6 +139,7 @@
 ---@field DefensePower integer # The total defending power of the entire Armies object
 ---@field Fogged boolean # True when the client cannot see the Armies object
 ---@field IsEmpty boolean # True if the Armies object has 0 armies and has 0 special units
+---@field NumArmies integer # Number of normal armies here.
 ---@field SpecialUnits SpecialUnit[] # Array containing all the special units in this Armies object
 ---@field Add fun(armies: Armies): Armies # Combines the 2 Armies object and returns the result. A new Armies object is created and returned
 ---@field Subtract fun(armies: Armies): Armies # Combines the 2 Armies object and returns the result. A new Armies object is created and returned
