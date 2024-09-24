@@ -776,24 +776,24 @@
 ---| 'VeryFoggy' # Heavy fog
 
 ---@class EnumStructureType # Structure type enums
----| 'City' # City
----| 'ArmyCamp' # Idle army camp
----| 'Mine' # Idle mine
----| 'Smelter' # Idle smelter
----| 'Crafter' # Idle crafter
----| 'Market' # Idle market
----| 'ArmyCache' # Idle army cache
----| 'MoneyCache' # Idle money cache
----| 'ResourceChache' # Idle resource cache
----| 'MercenaryCamp' # Idle mercenary cache
----| 'Power' # Idle power
----| 'Draft' # Idle draft
----| 'Arena' # Idle arena
----| 'Hospital' # Idle hospital
----| 'DigSite' # Idle dig site
----| 'Attack' # Idle attack
----| 'Mortar' # Idle mortar
----| 'Recipe' # Idle recipe
+---@field City string # City
+---@field ArmyCamp string # Idle army camp
+---@field Mine string # Idle mine
+---@field Smelter string # Idle smelter
+---@field Crafter string # Idle crafter
+---@field Market string # Idle market
+---@field ArmyCache string # Idle army cache
+---@field MoneyCache string # Idle money cache
+---@field ResourceCache string # Idle resource cache
+---@field MercenaryCamp string # Idle mercenary cache
+---@field Power string # Idle power
+---@field Draft string # Idle draft
+---@field Arena string # Idle arena
+---@field Hospital string # Idle hospital
+---@field DigSite string # Idle dig site
+---@field Attack string # Idle attack
+---@field Mortar string # Idle mortar
+---@field Recipe string # Idle recipe
 
 ---@class EnumMoveOrder # Move order enums
 ---| 'Cycle' # Create a random move order list, and use that for every turn
