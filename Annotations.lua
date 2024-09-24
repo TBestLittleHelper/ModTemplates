@@ -183,7 +183,7 @@
 ---@field DefensePower integer # The number it adds to the total defence power of the Armies object it is part of
 ---@field DefensePowerPercentage integer # When this unit defends from an attack, the total defence power is multiplied by this number. `1.0` means nothing happens, `2.0` means that the power is doubled (+100%) and `0.5` means the power if halved (-50%)
 ---@field Health integer | nil # Defines the health of the unit. When nil the DamageToKill is used to determine when this unit dies. The unit will automatically reduce health when it takes damage and is removed when it's health is below 1
----@field ImageFileName string # The name of the PNG file in the `SpecialUnitsImages` folder. This will be the icon of the unit that is shown on the map
+---@field ImageFilename string # The name of the PNG file in the `SpecialUnitsImages` folder. This will be the icon of the unit that is shown on the map
 ---@field IncludeABeforeName boolean # If true, when displaying this units name an 'A' will be put before the name
 ---@field IsVisibleToAllPlayers boolean # If true, this unit is at all times visible for all players, meaning that a territory with this unit will be visible for every player in the game
 ---@field ModData string # Custom data added to the unit. Please note that using the ID of the unit to save data in one of the Mod storages is not safe since it is fairly common to clone a unit, modify where necessary, remove the old unit and add the clone back. This results in essentially the same unit but with a different ID.
