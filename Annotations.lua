@@ -924,7 +924,7 @@
 ---@field Create fun(playerID: PlayerID, cardInstanceID: CardInstanceID): GameOrderDiscard # Creates a GameOrderDiscard object
 
 ---@class GameOrderEventWL # WL GameOrderEvent
----@field Create fun(playerID: PlayerID, message: string, visibleToOpt: HashSet<PlayerID> | nil, terrModsOpt: TerritoryModification[], setResoucesOpt: table<PlayerID, table<EnumResourceType, integer>> | nil, incomeModsOpt: IncomeMod[] | nil): GameOrderEvent # Creates a GameOrderEvent object
+---@field Create fun(playerID: PlayerID, message: string, visibleToOpt: HashSet<PlayerID> | nil, terrModsOpt?: TerritoryModification[], setResoucesOpt: table<PlayerID, table<EnumResourceType, integer>> | nil, incomeModsOpt: IncomeMod[] | nil): GameOrderEvent # Creates a GameOrderEvent object
 
 ---@class GameOrderPlayCardAbandonWL # WL GameOrderPlayCardAbandon
 ---@field Create fun(cardInstanceID: CardInstanceID, playerID: PlayerID, targetTerritoryID: TerritoryID): GameOrderPlayCardAbandon # Creates a GameOrderPlayCardAbandon object
