@@ -1017,15 +1017,15 @@
 ---@field id string # A unique UUID of this UIObject
 
 ---@class TextUIObject # An UI object that can display text
----@field SetText fun(text: string): TextUIObject # Set the text of the UI object
+---@field SetText fun(text: string) # Set the text of the UI object
 ---@field GetText fun(): string # Get the text of the UI object
 
 ---@class ColorUIObject # An UI object that can have a color
----@field SetColor fun(color: string): ColorUIObject # Sets the colof of the UI object. Only accepts strings of the format `#XXXXXX` where an X is a hexadecimal character
+---@field SetColor fun(color: string) # Sets the colof of the UI object. Only accepts strings of the format `#XXXXXX` where an X is a hexadecimal character
 ---@field GetColor fun(): string # Get the color of the UI object
 
 ---@class InteractableUIObject # An UI object that is interactable
----@field SetInteractable fun(bool: boolean): InteractableUIObject # Set the UI object interactable or not interactable
+---@field SetInteractable fun(bool: boolean) # Set the UI object interactable or not interactable
 ---@field GetInteractable fun(): boolean # Returns true if the client can interact with the UI object
 
 ---@class EmptyUIObject: UIObject # A container that displays nothing. Used to create a better layout
