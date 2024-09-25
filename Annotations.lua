@@ -977,13 +977,10 @@
 ---@class TerritoryModificationWL # WL TerritoryModification
 ---@field Create fun(terrID: TerritoryID): TerritoryModification # Creates a TerritoryModification object
 
----@class EnumModOrderControl # Enum values of ModOrderControl
----| 'Keep' # Keep the order
----| 'Skip' # Skip the order and add an order that tells the player it got skipped
----| 'SkipAndSupressSkippedMessage' # Skip the order but not add an order that tells the player it got skipped
-
-
-
+---@class EnumModOrderControl # Enum values of
+---@field Keep string # Keep the order
+---@field Skip string # Skip the order and add an order that tells the player it got skipped
+---@field SkipAndSupressSkippedMessage string  # Skip the order but not add an order that tells the player it got skipped
 
 ---@class UI # Root component containing all UI related objects
 ---@field CreateEmpty fun(parent: UIObject): EmptyUIObject # Creates a container that displays nothing. Used to create a better layout
