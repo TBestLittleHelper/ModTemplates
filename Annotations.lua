@@ -977,10 +977,10 @@
 ---@class TerritoryModificationWL # WL TerritoryModification
 ---@field Create fun(terrID: TerritoryID): TerritoryModification # Creates a TerritoryModification object
 
----@class EnumModOrderControl # Enum values of
----@field Keep string # Keep the order
----@field Skip string # Skip the order and add an order that tells the player it got skipped
----@field SkipAndSupressSkippedMessage string  # Skip the order but not add an order that tells the player it got skipped
+---@class EnumModOrderControl # Enum values off
+---@field Keep EnumModOrderControl # Keep the order
+---@field Skip EnumModOrderControl # Skip the order and add an order that tells the player it got skipped
+---@field SkipAndSupressSkippedMessage EnumModOrderControl  # Skip the order but not add an order that tells the player it got skipped
 
 ---@class UI # Root component containing all UI related objects
 ---@field CreateEmpty fun(parent: UIObject): EmptyUIObject # Creates a container that displays nothing. Used to create a better layout
@@ -1003,11 +1003,11 @@
 ---@field selected fun() # Zero argument function that will be invoked if this option is picked
 
 ---@class UIObject # An UI object
----@field SetPreferredWidth fun(width: number): UIObject # Set the preferred width of the UIObject. It may not be this wide if there is not enough space, and it may be wider if FlexibleWidth is greater than 0. Defaults to -1, which is a special value meaning the object will meansure its own size based on its contents. Returns itself
+---@field SetPreferredWidth fun(width: number) # Set the preferred width of the UIObject. It may not be this wide if there is not enough space, and it may be wider if FlexibleWidth is greater than 0. Defaults to -1, which is a special value meaning the object will meansure its own size based on its contents. Returns itself
 ---@field GetPreferredWidth fun(): number # Returns the preferred width set for this UIObject
 ---@field SetPreferredHeight fun(height: number): UIObject # Set the preferred height of the UIObject. It may not be this tall if there is not enough space, and it may be taller if FlexibleHeight is greater than 0. Defaults to -1, which is a special value meaning the object will meansure its own size based on its contents. Returns itself
 ---@field GetPreferredHeight fun(): number # Returns the preferred height set for this UIObject
----@field SetFlexibleWidth fun(width: number): UIObject # Set the flexible width of the UIObject. A number from 0 to 1 indicating how much of the remaining space this element wishes to take up. Defaults to 0, which means the element will be no wider than PreferredWidth. Set it to 1 to indicate the object should grow to encompass all remaining horizontal space it can.
+---@field SetFlexibleWidth fun(width: number) # Set the flexible width of the UIObject. A number from 0 to 1 indicating how much of the remaining space this element wishes to take up. Defaults to 0, which means the element will be no wider than PreferredWidth. Set it to 1 to indicate the object should grow to encompass all remaining horizontal space it can.
 ---@field GetFlexibleWidth fun(): number # returns the flexible width set for this UIObject
 ---@field SetFlexibleHeight fun(height: number): UIObject # Set the flexible height of the UIObject. A number from 0 to 1 indicating how much of the remaining space this element wishes to take up. Defaults to 0, which means the element will be no taller than PreferredHeight. Set it to 1 to indicate the object should grow to encompass all remaining vertical space it can
 ---@field GetFlexibleHeight fun(): number # Returns the flexible height set for this UIObject
@@ -1058,7 +1058,7 @@
 ---@field GetWholeNumbers fun(): boolean # Get whether this number input field accepts only integers or also decimal numbers
 ---@field SetSliderMinValue fun(minValue: number): NumberInputField # Set the minimum value of the slider
 ---@field GetSliderMinValue fun(): number # Get the minimum value of the slider
----@field SetSliderMaxValue fun(maxValue: number): NumberInputField # Set the maximum value of the slider
+---@field SetSliderMaxValue fun(maxValue: number) # Set the maximum value of the slider
 ---@field GetSliderMaxValue fun(): number # Get the maximum value of the slider
 ---@field SetBoxPreferredWidth fun(width: number): NumberInputField # Set the preferred width of just the input box
 ---@field GetBoxPreferredWidth fun(): number # Get the preferred width of just the input box
