@@ -700,6 +700,7 @@
 ---@field CardGameSanctions CardGameSanctionsWL # Allows for creating CardGameSanctions objects
 ---@field CardGameSpy CardGameSpyWL # Allows for creating CardGameSanctions objects
 ---@field CardGameSurveillance CardGameSurveillanceWL # Allows for creating CardGameSurveillance objects
+---@field CardID integer # Alias for an integer that represents a card ID. For example, 1 means Reinforcement Card, 2 means Spy Card, etc. However, you should never hard-code the values in your app, instead, compare them to the constants WL.CardID.Reinforcement, WL.CardID.Spy, etc.
 ---@field NoParameterCardInstance NoParameterCardInstanceWL # Allows for creating NoParameterCardInstance objects
 ---@field ReinforcementCardInstance ReinforcementCardInstanceWL # Allows for creating ReinforcementCardInstance objects
 ---@field CustomScenario CustomScenarioWL # Allows for creating CustomScenario objects
